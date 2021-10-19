@@ -37,7 +37,15 @@ public class MainActivity extends AppCompatActivity {
         txtRKeliling = findViewById(R.id.txtRumusKeliling);
     }
 
+    private void clearText(){
+        txtKeliling.setText("-");
+        txtLuas.setText("-");
+        txtRKeliling.setText("-");
+        txtRLuas.setText("-");
+    }
+
     public void hitungPersegi(View view){
+        clearText();
         try {
             txtRLuas.setText(getString(R.string.rumus_L_persegi));
             txtRKeliling.setText(getString(R.string.rumus_K_persegi));
@@ -56,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hitungLingkaran(View view){
+        clearText();
         try {
             txtRLuas.setText(getString(R.string.rumus_L_lingkaran));
             txtRKeliling.setText(getString(R.string.rumus_K_lingkaran));
@@ -77,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hitungSegitiga(View view){
+        clearText();
         try {
             txtRLuas.setText(getString(R.string.rumus_L_segitiga));
             txtRKeliling.setText(getString(R.string.rumus_K_segitiga));
