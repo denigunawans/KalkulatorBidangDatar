@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Kalkulator Bidang Datar</string>
+    <string name="rumus_L_persegi">Rumus luas persegi : s x s</string>
+    <string name="rumus_K_persegi">Rumus keliling persegi : s+s+s+s</string>
+    <string name="rumus_L_segitiga">Rumus luas segitiga : 1/2 a x t</string>
+    <string name="rumus_K_segitiga">Rumus keliling segitiga sama sisi : s+s+s</string>
+    <string name="rumus_L_lingkaran">Rumus luas lingkaran : phi x r x r</string>
+    <string name="rumus_K_lingkaran">Rumus keliling lingkaran : phi x 2 x r</string>
+    <string name="judul">KALKULATOR BIDANG DATAR</string>
+    <string name="hitung_persegi">HITUNG PERSEGI</string>
+    <string name="alas_cm">alas</string>
+    <string name="hitung_segitiga">HITUNG SEGITIGA</string>
+    <string name="hitung_lingkaran">HITUNG LINGKARAN</string>
+    <string name="panjang_cm">panjang</string>
+    <string name="slash">/</string>
+    <string name="lebar_cm">lebar</string>
+    <string name="diameter_cm">diameter</string>
+    <string name="tinggi_cm">tinggi</string>
+    <string name="tx_input1">Masukan panjang / alas / diameter (cm)</string>
+    <string name="tx_input2">Maukan lebar / tinggi (cm)</string>
+</resources>

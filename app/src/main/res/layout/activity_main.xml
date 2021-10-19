@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0B8B4F"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/judul"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tx_input1"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/lyInput1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp">
+
+                <EditText
+                    android:id="@+id/edtPanjang"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:autoSizeTextType="uniform"
+                    android:ems="10"
+                    android:hint="@string/panjang_cm"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txSlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slash"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtAlas"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:autoSizeTextType="uniform"
+                    android:ems="10"
+                    android:hint="@string/alas_cm"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txSlash2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slash"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtDiameter"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:autoSizeTextType="uniform"
+                    android:ems="10"
+                    android:hint="@string/diameter_cm"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tx_input2"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/lyInput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp">
+
+                <EditText
+                    android:id="@+id/edtLebar"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="@string/lebar_cm"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txSlash3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slash"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtTinggi"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="@string/tinggi_cm"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorLink="#009688"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/btnPersegi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#077b8a"
+                android:onClick="hitungPersegi"
+                android:text="@string/hitung_persegi"
+                android:textColor="#D7CCC8"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#077b8a"
+                android:onClick="hitungLingkaran"
+                android:text="@string/hitung_lingkaran"
+                android:textColor="#D7CCC8"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#077B8A"
+                android:onClick="hitungSegitiga"
+                android:text="@string/hitung_segitiga"
+                android:textColor="#D7CCC8"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/txtRumusLuas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtLuas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/txtRumusKeliling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtKeliling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
